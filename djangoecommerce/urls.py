@@ -21,9 +21,5 @@ from djangoecommerce import settings
 
 urlpatterns = [
     url(r'^$', views.index),
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls)
 ]
-
-urlpatterns += patterns('',
- (r'^static/(?P.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
- )
